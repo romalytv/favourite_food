@@ -4,59 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="./images/Vector.svg" alt="іконка"/>
+        <img src="./images/kabanos_logo.png" alt="іконка" width="60px" height="60px"/>
         <nav>
-            <a href="#">Main</a>
-            <a href="#">About Us</a>
-            <a href="#">Trainers</a>
-            <a href="#">App</a>
+            <a href="#hero">Main</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#app">App</a>
         </nav>
         <div class="icons">
-            <a href="instagram.com">
+            <a href="https://instagram.com">
                 <img src="./images/Inst.svg">
             </a>
-            <a href="facebook.com">
+            <a href="https://facebook.com">
                 <img src="./images/Facebook.svg">
             </a>
-            <a href="tiktok.com">
+            <a href="https://tiktok.com">
                 <img src="./images/TikTok.svg">
             </a>
-            <a href="youtube.com">
+            <a href="https://youtube.com">
                 <img src="./images/YouTube.svg">
             </a>
         </div>
     </header>
     <main>
-        <div class="hero-section">
+        <section id="hero" class="hero">
             <div class="left">
-                <h6>Sweet fun, full of milk.</h6>
-                <h2>Feel inside cold with our delicious ice-cream</h2>
-                <p>Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts, my words.</p>
-                <button>Buy now</button>
+                <p>Солоне задоволення, сповнене копченого м'яса.</p>
+                <h1>Відчуйте ідеальний хруст з нашими смачними <i>кабаносами</i></h1>
+                <p>Ці сушені в’ялені ковбаски — неперевершений солоний снек, що дарує насичений, димний та пряний смак у кожному шматочку.</p>
+                <a class="button" href="#">Замовити зараз</a>
             </div>
-            <img src="./images/img-main.png" alt="">
-        </div>
-        <div class="about-section">
+            <img src="./images/kabanosy_main.jpg" alt="Кабаноси">
+        </section>
+        <section id="about" class="about">
             <p>
-                Vioty — це більше, ніж просто морозиво, це <b>мистецтво смаку</b>, створене з відбірних натуральних інгредієнтів <b>без штучних домішок</b>. 
-                Ми поєднуємо класичні традиції та сміливі кулінарні тренди, щоб кожна кулька дарувала вам <b>чисту насолоду</b> та повертала у <b>найкращі спогади дитинства</b>. 
-                Спробуйте гармонію ніжної текстури та яскравих ароматів, народжену з любові до справжнього продукту.
+                <b>Наші кабаноси створюються за традиційними рецептами з відбірного м'яса,</b> <i>ретельно витриманого та закопченого на натуральній деревині до ідеальної хрусткої текстури. 
+                Ми поєднуємо секрети майстерності та сучасні технології, щоб кожна снекова паличка дарувала насичений пряний смак,</i> <b>який ідеально доповнює будь-який момент вашого дня.</b>
             </p>
-        </div>
+        </section>
+        <section id="products" class="products">
+            <h2>Наші продукти</h2>
+            <button>
+                <img src="./images/left.svg" alt="Кнопка ліворуч" />
+            </button>
+            <button>
+                <img src="./images/right.svg" alt="Кнопка праворуч" />
+            </button>
+            <article class="product">
+                <img src="./images/kabanosy_1.jpg" width="640px" height="640px" />
+                <h3>Кабаноси Класичні свинячі</h3>
+                <p>Традиційні напівсухі ковбаски з відбірної свинини з добірними спеціями та легким димним ароматом. Ідеальний баланс м'яса та прянощів для щоденного перекусу.</p>
+                <span>65.00</span>
+                <button>Купити</button>
+            </article>
+            <article class="product">
+                <img src="./images/kabanosy_2.jpg" width="640px" height="640px" />
+                <h3>Кабаноси пікантні з перцем чилі</h3>
+                <p>Для любителів гострого. Насичений м'ясний смак, доповнений яскравою гостротою перцю чилі та паприки, які залишають приємний пряний посмак.</p>
+                <span>70.00</span>
+                <button>Купити</button>
+            </article>
+            <article class="product">
+                <img src="./images/kabanosy_3.jpg" width="640px" height="640px" />
+                <h3>Кабаноси курячі дієтичні</h3>
+                <p>Легкі та ніжні ковбаски з курячого філе з додаванням прованських трав. Чудовий вибір для тих, хто стежить за калоріями, але шукає смачний снек.</p>
+                <span>62.00</span>
+                <button>Купити</button>
+            </article>
+            <article class="product">
+                <img src="./images/kabanosy_4.jpg" width="640px" height="640px" />
+                <h3>Кабаноси з сиром Чедер</h3>
+                <p>Оригінальне поєднання преміального м'ясного фаршу та вкраплень пікантного сиру Чедер, який створює неповторний кремовий відтінок у смаку.</p>
+                <span>75.00</span>
+                <button>Купити</button>
+            </article>
+            <article class="product">
+                <img src="./images/kabanosy_5.jpg" width="640px" height="640px" />
+                <h3>Кабаноси яловичі з ялівцем</h3>
+                <p>Елітні щільні ковбаски з яловичини з насиченим глибоким смаком та тонким лісовим ароматом ягід ялівцю. Зроблено за традиційними рецептами копчення.</p>
+                <span>82.00</span>
+                <button>Купити</button>
+            </article>
+            <article class="product">
+                <img src="./images/kabanosy_6.jpg" width="640px" height="640px" />
+                <h3>Кабаноси часникові з зеленню</h3>
+                <p>Ароматні м'ясні снеки з вираженим нотками свіжого часнику, чорного перцю та сушеної зелені. Класичний європейський смак до пива чи швидкого перекусу.</p>
+                <span>67.00</span>
+                <button>Купити</button>
+            </article>
+        </section>
+        <section id="app" class="app-section">
+            <h2>Зручний спосіб замовити кабаноси</h2>
+            <p>
+                Насолоджуйтесь неперевершеним копченим смаком, доставимо прямо до ваших дверей у кілька кліків.            </p>
+            <ol>
+                <li>Виберіть свій смак</li>
+                <li>Додайте в кошик</li>
+                <li>Підтвердіть замовлення</li>
+            </ol>
+            <a href="https://apps.apple.com/ua/iphone/apps">
+                <img src="./images/iphone.png" />
+            </a>
+            <a href="https://play.google.com/store/games?hl=ru">
+                <img src="./images/google.png" />
+            </a>
+            <img src="./images/hand_kabanosy.jpg" width="640px" height="640px" />
+        </section>
+        <section id="contact" class="contact">
+            <h2>Зв'яжіться з нами</h2>
+            <form action="#">
+                <label> Ваше ім'я
+                    <input type="text" name="name" placeholder="Інна Шевченко" required/>
+                </label>
+                <label> Ваш Email
+                    <input type="email" name="email" placeholder="gmail@gmail.com" required/>
+                </label>
+                <label> Ваше повідомлення
+                    <input type="text" name="message" placeholder="Повідомлення йде тут..." required/>
+                </label>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <div class="footer-column">
+            <img src="./images/kabanos_logo.png" alt="іконка" width="60px" height="60px"/>
+            <p>Солоне задоволення, сповнене копченого м'яса.</p>
+            <div class="icons">
+                <a href="https://instagram.com">
+                    <img src="./images/Inst.svg">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./images/Facebook.svg">
+                </a>
+                <a href="https://tiktok.com">
+                    <img src="./images/TikTok.svg">
+                </a>
+                <a href="https://youtube.com">
+                    <img src="./images/YouTube.svg">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <nav>
+                <a href="#hero">Main</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#app">App</a>
+                <a href="#contact">Contact form</a>
+            </nav>
+        </div>
+        <div class="footer-column">
+            <h3>Contacts</h3>
+            <a href="tel:+380631234567">+380631234567</a>
+            <a href="mail:info@kabanosy.com">info@kabanosy.com</a>
+        </div>
+        <div class="footer-column">
+            <h3>Location</h3>
+            <p>вул. Хрещатик 1, Київ, Україна</p>
+            <p>просп. Свободи 2, Львів, Україна</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-<!-- <div class="product">
-    <img src="" />
-    <h2>brown bread</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et voluptatem repudiandae perspiciatis earum, quam excepturi repellat sapiente eius ad tenetur delectus dolores veritatis placeat aliquam sunt. Error, repellendus facilis?</p>
-    <span>19.55</span>
-    <button>Buy now</button>
-</div> -->
-
-
